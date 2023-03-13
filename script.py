@@ -7,3 +7,9 @@ response = requests.get(path)
 
 # Print the status code
 print(response.status_code)
+
+# Save the file locally (open())
+local_path = f"tmp/data/source/downloaded_at=2021-02-01/PPR-ALL.zip"
+with open(local_path, "wb") as f:
+    f.write(response.content)
+    
