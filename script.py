@@ -12,4 +12,8 @@ print(response.status_code)
 local_path = f"tmp/data/source/downloaded_at=2021-02-01/PPR-ALL.zip"
 with open(local_path, "wb") as f:
     f.write(response.content)
-    
+
+# Exploring a ZIP file
+
+# Import the required method
+from zipfile import ZipFile
