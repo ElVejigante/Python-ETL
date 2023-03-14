@@ -30,3 +30,9 @@ with ZipFile(path, mode="r") as f:
 import csv
 from pprint import pprint
 
+# Open the CSV file in read mode
+with open(path, mode="r", encoding="windows-1252") as csv_file:
+    # Open csv_file so that each row is a dictionary
+    reader = csv.DictReader(csv_file)
+
+    
