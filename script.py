@@ -25,3 +25,8 @@ with ZipFile(path, mode="r") as f:
     # Extract the CSV file
     csv_file_path = f.extract(file_names[0])
     print(csv_file_path)
+
+# Reading from a CSV file
+import csv
+from pprint import pprint
+
