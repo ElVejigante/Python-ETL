@@ -39,6 +39,14 @@ with open(path, mode="r", encoding="windows-1252") as csv_file:
     row = next(reader)
     print(type(row))
     pprint(row)
-    
+
+fieldnames = {
+    "Date of Sale (dd/mm/yyyy)": "date_of_sale",
+    "Address": "address",
+    "Postal Code": "postal_code",
+    "County": "county",
+    "Price (€)": "price",
+    "Description of Property": "description",
+}
 
     
