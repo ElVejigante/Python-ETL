@@ -1,9 +1,11 @@
 # Import extract, transform and load
 import extract, transform, load
 
-# 1. Run Extract
-extract.main()
-# 2. Run Transform
-transform.main()
-# 3. Run Load
-load.main()
+# Ensure execute.py can only be ran from bash
+if __name__ == "__main__":
+    # 1. Run Extract
+    extract.main()
+    # 2. Run Transform
+    transform.main()
+    # 3. Run Load
+    load.main()
